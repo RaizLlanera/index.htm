@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Magnesio & Ashwagandha - Mejora tu Bienestar Naturalmente</title>
+    <!-- Google Fonts - Montserrat para una tipografía limpia y profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Variables de colores */
+        :root {
+            --dark-green: #1a4f32;
+            --gold: #c39a3f;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+            --text-color: #333;
+        }
+
+        /* Estilos generales y reset */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Encabezado */
+        .header {
+            background-image: url('https://i.postimg.cc/GpMwSfZm/9.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #e0f2fe; /* Color de respaldo, un azul muy claro */
+            color: var(--text-color);
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        
+        /* Aseguramos que el contenido del encabezado esté sobre la imagen */
+        .header > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .header .product-image {
+            max-width: 300px;
+            margin-top: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra para bordes difuminados */
+            transition: transform 0.3s ease-in-out;
+            object-fit: contain;
+        }
+
+        .header .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Sección de Beneficios */
+        .benefits {
+            background-color: var(--light-gray);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--dark-green);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-item .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        /* Sección de Promoción */
+        .promo-section {
+            background-image: url('https://i.postimg.cc/CLr20Yzk/8.png'); /* Fondo de textura verde */
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+        /* Capa superpuesta para mejor legibilidad */
+        .promo-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+            z-index: 1;
+        }
+        .promo-section > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .promo-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .promo-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .promo-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .promo-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .promo-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .promo-item .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        .promo-item .old-price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: rgba(255, 255, 255, 0.6);
+            margin-right: 0.5rem;
+        }
+
+        .promo-section .cta-button {
+            margin-top: 2rem;
+        }
+
+        /* Estilos del Temporizador */
+        .countdown {
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        
+        /* Botón CTA (Call to Action) */
+        .cta-button {
+            background-color: var(--gold);
+            color: var(--dark-green);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #dcb058;
+            transform: translateY(-3px);
+        }
+
+        /* Sección de Experiencia del Usuario */
+        .experience-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 2rem;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .experience-section .content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            max-width: 1000px;
+        }
+
+        .experience-section .text-content {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+
+        .experience-section img {
+            flex: 1;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Testimonios */
+        .testimonials {
+            background-color: var(--dark-green);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .testimonial-item .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--gold);
+            object-fit: cover;
+        }
+
+        /* Garantías y Confianza */
+        .guarantees {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: var(--light-gray);
+        }
+
+        .guarantees h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--dark-green);
+        }
+
+        .guarantees-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .guarantees-grid .item {
+            text-align: center;
+            font-weight: 600;
+            color: var(--dark-green);
+        }
+
+        .guarantees-grid .item img {
+            width: 80px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Pie de Página */
+        .footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .footer .social-icons a {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer .social-icons a:hover {
+            color: var(--gold);
+        }
+
+        .footer p {
+            margin: 1rem 0 0;
+            font-size: 0.8rem;
+        }
+
+        /* Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: var(--white);
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsividad para móviles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header h2 {
+                font-size: 1rem;
+            }
+
+            .benefits, .product-section, .testimonials, .guarantees, .promo-section, .experience-section {
+                padding: 2rem 1rem;
+            }
+
+            .benefits-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-info, .promo-grid, .experience-section .content {
+                flex-direction: column;
+            }
+
+            .guarantees-grid {
+                flex-direction: column;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <!-- Encabezado -->
+        <header class="header">
+            <h1>Super Magnesio & Ashwagandha & Melatonina</h1>
+            <h2>Reduce el estrés, mejora tu sueño y equilibra tu sistema nervioso</h2>
+            <img src="https://i.postimg.cc/L5LvWgG9/Original-Remasterizada-sin-fondo.png" alt="Imagen del producto" class="product-image">
+        </header>
+
+        <!-- Sección de Beneficios -->
+        <section class="benefits">
+            <h2>Beneficios Clave</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="icon">🌙</span>
+                    <h3>Mejor calidad del sueño</h3>
+                    <p>La melatonina ayuda a regular los ciclos de sueño, permitiéndote descansar más profundamente.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">💪</span>
+                    <h3>Reducción del estrés</h3>
+                    <p>Ashwagandha KSM-66, un adaptógeno que combate el estrés y la ansiedad de forma natural.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">🧠</span>
+                    <h3>Equilibrio mental</h3>
+                    <p>El magnesio es vital para el correcto funcionamiento del cerebro y la relajación muscular.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="icon">⚡</span>
+                    <h3>Apoyo al sistema nervioso</h3>
+                    <p>Una fórmula completa para calmar y fortalecer tu sistema nervioso día tras día.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Producto -->
+        <section class="product-section">
+            <div class="container">
+                <h2>El Poder de la Naturaleza en un solo frasco</h2>
+                <div class="product-info">
+                    <img src="https://i.postimg.cc/SxzV64RL/5.jpg" alt="Frasco y cápsulas de Super Magnesio" class="product-image">
+                    <p>Nuestro suplemento combina la potencia del <strong>Magnesio</strong>, el adaptógeno premium <strong>Ashwagandha KSM-66</strong> y la <strong>Melatonina</strong> para ofrecerte una solución integral para el bienestar. Fabricado en EE. UU. con los más altos estándares de calidad.</p>
+                    <a href="https://wa.me/573203651692" target="_blank" class="cta-button">Comprar Ahora por WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Promoción -->
+        <section class="promo-section">
+            <div class="container">
+                <h2>¡Oferta Especial por Tiempo Limitado!</h2>
+                <p>Aprovecha nuestra promoción exclusiva y ahorra al comprar dos frascos. ¡No te quedes sin tu dosis de bienestar!</p>
+                <!-- Temporizador de cuenta regresiva -->
+                <div class="countdown" id="countdown-timer"></div>
+                <div class="promo-grid">
+                    <div class="promo-item">
+                        <img src="https://i.postimg.cc/L5LvWgG9/Original-Remasterizada-sin-fondo.png" alt="Un frasco de Super Magnesio" >
+                        <p><strong>1 frasco por</strong><br><span class="price">$75.900 COP</span></p>
+                    </div>
+                    <div class="promo-item">
+                        <img src="https://i.postimg.cc/kXnqyQ0g/Original-2.png" alt="Dos frascos de Super Magnesio" >
+                        <p><strong>2 frascos por</strong><br><span class="price">$135.000 COP</span></p>
+                    </div>
+                </div>
+                <a href="https://wa.me/573203651692" target="_blank" class="cta-button">¡Quiero la Oferta!</a>
+            </div>
+        </section>
+
+        <!-- Nueva Sección de Experiencia -->
+        <section class="experience-section">
+            <div class="container">
+                <h2>Experimenta el Cambio</h2>
+                <div class="content">
+                    <div class="text-content">
+                        <p>Imagina un día sin la carga del estrés, con la mente clara y el cuerpo en armonía. Nuestro suplemento no solo te ayuda a dormir, sino que te brinda la paz mental que necesitas para enfrentar tu día a día con energía y serenidad. Es el apoyo que tu sistema nervioso ha estado pidiendo.</p>
+                        <a href="https://wa.me/573203651692" target="_blank" class="cta-button">Descubre una Vida en Calma</a>
+                    </div>
+                    <img src="https://i.postimg.cc/tCJBgWHM/4.jpg" alt="Persona relajada y durmiendo tranquilamente">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios de Clientes -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-item">
+                        <img src="https://i.postimg.cc/0j07TTd3/testimonio1.png" alt="Foto de perfil de cliente" class="profile-pic">
+                        <p>"Desde que uso este suplemento, mis noches son mucho más tranquilas y me siento menos ansioso durante el día. ¡Totalmente recomendado!"</p>
+                        <h4>- Juan D.</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="https://i.postimg.cc/8Ph1S1vs/Testimonio2.png" alt="Foto de perfil de cliente" class="profile-pic">
+                        <p>"¡Increíble! Me ha ayudado muchísimo con el insomnio. Ahora me levanto con más energía y claridad mental. Un cambio notable."</p>
+                        <h4>- Laura P.</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="https://i.postimg.cc/pddxzz6n/Testimonio3.png" alt="Foto de perfil de cliente" class="profile-pic">
+                        <p>"El mejor suplemento que he probado para el estrés. La combinación de ingredientes es perfecta. Ya no me imagino mis días sin él."</p>
+                        <h4>- Mario L.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Garantías y Confianza -->
+        <section class="guarantees">
+            <div class="container">
+                <h2>Garantía de Calidad</h2>
+                <div class="guarantees-grid">
+                    <div class="item">
+                        <img src="https://i.postimg.cc/g2bbQ8j1/100-original.png" alt="Sello de 100% Original">
+                        <p>100% Original</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.postimg.cc/NfJprcqD/Made-in-usa.png" alt="Bandera de USA">
+                        <p>Made in USA</p>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.postimg.cc/VkJ4qVz8/Aprovado-por-fda.png" alt="Sello Aprobado por FDA">
+                        <p>Aprobado por FDA</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de Página -->
+        <footer class="footer">
+            <div class="container">
+                <h3>Contacto</h3>
+                <p>Email: info@supermagnesio.com</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+                <p>Este producto es un suplemento dietario, no reemplaza una alimentación equilibrada. Consulte con su médico antes de usar.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573203651692" class="whatsapp-float" target="_blank">
+        <span class="icon">💬</span>
+    </a>
+
+    <!-- JavaScript para el temporizador -->
+    <script>
+        // Función para actualizar el temporizador cada segundo
+        function updateCountdown() {
+            // Establecer la fecha final de la cuenta regresiva (1 hora desde ahora)
+            // Se usa localStorage para mantener el tiempo incluso si se recarga la página
+            const countdownKey = 'countdownTime';
+            let countdownTime = localStorage.getItem(countdownKey);
+            
+            // Si no hay un tiempo guardado, establece uno nuevo
+            if (!countdownTime) {
+                const now = new Date().getTime();
+                // 1 hora = 1 * 60 * 60 * 1000 milisegundos
+                countdownTime = now + (1 * 60 * 60 * 1000);
+                localStorage.setItem(countdownKey, countdownTime);
+            }
+
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownTime - now;
+
+                // Cálculos de tiempo para horas, minutos y segundos
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Mostrar el resultado en el elemento con id="countdown-timer"
+                const timerElement = document.getElementById("countdown-timer");
+                if (timerElement) {
+                    timerElement.innerHTML = "¡La oferta termina en " + hours.toString().padStart(2, '0') + ":"
+                    + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0') + "!";
+                }
+
+                // Si el tiempo ha terminado, borra el temporizador y la llave de localStorage
+                if (distance < 0) {
+                    clearInterval(x);
+                    localStorage.removeItem(countdownKey);
+                    if (timerElement) {
+                         timerElement.innerHTML = "¡Oferta Terminada!";
+                    }
+                }
+            }, 1000);
+        }
+
+        // Llamar a la función al cargar la página
+        window.onload = updateCountdown;
+    </script>
+
+</body>
+</html>
